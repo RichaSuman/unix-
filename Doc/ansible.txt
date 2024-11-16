@@ -1,0 +1,34 @@
+https://github.com/spurin/diveintoansible
+https://github.com/spurin/diveintoansible-lab
+
+# core component of Ansible
+Modules
+ansible executable
+ansible playbook executable
+Inventories
+
+#Targets for ansible
+host, network & switches, storage Arrary, containers
+
+# ping all the host
+# -i inventory
+# -m module
+ansible -i,ubuntu1,ubuntu2,ubuntu3,centos1,centos2,centos3 all -m ping
+
+# Ansible Configuration
+1. default path for ansible cfg file - /etc/ansible/ansible.cfg
+2. if created hidden file - ~/.ansible.cfg then config file changes to ~/.ansible.cfg(/home/richa/.ansible.cfg)
+3. another hidden file -  /home/richa/.ansible
+4. ./ansible.cfg # each directory can have its own ansible.cfg file
+5. ANSIBLE_CONFIG - 
+    export ANSIBLE_CONFIG=/home/richa/Desktop/Shell_Scripting/Learn_Ansible/this_is_new_ansible.cfg
+    then, config file = /home/richa/Desktop/Shell_Scripting/Learn_Ansible/this_is_new_ansible.cfg (in ansible --version cmd)
+
+    unset ANSIBLE_CONFIG
+    sudo rm /etc/ansible/ansible.cfg ; sudo rmdir /etc/ansible
+    rm ~/.ansible.cfg
+6. file formal for ansible - INI 
+
+# Ansible Inventories
+
+# Ansible Modules
